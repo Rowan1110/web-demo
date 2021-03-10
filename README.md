@@ -2,7 +2,7 @@
 
 hello world! 程式設計
 
-added on develop branch 000
+
 
 ![Cat](https://i.imgur.com/HrciJxY.jpg)
 
