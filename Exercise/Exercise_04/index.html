@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清單設計</title>
+</head>
+
+<body>
+    <span style="margin: 10em;"><img src="https://i.imgur.com/7kjI8L8.jpg"></span>
+    <br>
+    <span><a href="">Index Page</a></span>
+    <hr>
+    <ul>
+        <li><a href="http://www.yahoo.com">yahoo</a></li>
+        <li><a href="http://www.facebook.com">facebook</a></li>
+        <li><a href="http://www.google.com">goo<span style="color:aqua;">gle</span></a></li>
+    </ul>
+    <ul>
+        <li style="font-weight: bold; font-size: 20px;">Coffee</li>
+        <li style="border: 1em solid aqua;width: 60%;padding: 1em;height: 200px;">Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <div id="app">
+        <h1>{{ message }}</h1>
+        <input type="text" v-model="message">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var data = {
+            message: '即時更新頁面'
+        }
+        new Vue({
+            el: '#app',
+            data: data
+        });
+    </script>
+</body>
+
+</html>
