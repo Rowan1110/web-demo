@@ -1,4 +1,4 @@
-body {
+/* body { 
     background-color: lightblue;
 }
 
@@ -10,4 +10,66 @@ body {
 .content {
     font-family: verdana;
     font-size: 20px;
+}
+*/
+
+body {
+    margin: 0px;
+}
+
+
+/* nav 樣式設定 */
+
+nav {
+    display: flex;
+}
+
+nav>.logo {
+    /* 沒有彈性,固定尺寸 */
+    flex: none;
+    width: 100px;
+    background-color: #ffcccc;
+}
+
+nav>.menu {
+    /* 盡量把空間涨滿 */
+    flex: none;
+    background-color: #ccccff;
+}
+
+nav>.user {
+    flex: none;
+    width: 100px;
+    background-color: #ccffcc;
+}
+
+
+/* main 樣式設定 */
+
+main {
+    /* 容器 */
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+    background-color: #cccccc;
+}
+
+main>.item {
+    /* 項目 */
+    flex: none;
+    width: 270px;
+    margin: 10px;
+    background-color: #ffcccc;
+}
+
+@media (max-width:1200px) {
+    main>.item {
+        width: 45%;
+    }
+}
+
+@media (max-width:500px) {
+    main>.item {
+        width: 90%
+    }
 }
