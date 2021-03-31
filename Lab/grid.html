@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        font-size: 3rem;
+        grid-template-rows: auto 1fr minmax(100px, max-content);
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+    }
+    
+    header {
+        background-color: violet;
+        grid-column: 1/-1;
+    }
+    
+    main {
+        background-color: wheat;
+    }
+    
+    aside {
+        background-color: lightsalmon;
+    }
+    
+    footer {
+        background-color: lightblue;
+        grid-column: 1/-1;
+    }
+</style>
+</head>
+
+<body>
+
+    <header>header</header>
+    <main>main</main>
+    <aside>aside</aside>
+    <footer>footer</footer>
+
+</body>
+
+</html>
